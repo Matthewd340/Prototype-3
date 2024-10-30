@@ -19,15 +19,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        if (Input.GetKey(KeyCode.Space) && isOnGround == true)
         {
             playerRb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
-            isOnGround = false;
+            isOnGround = false;                       //adds force 1 time only
         }
     }
 
     private void OnCollisionEnter(Collision collision)
+                                //parameter  variable name
     {
-        isOnGround = true;
+        if(collision.gameObject.tag == "Ground")
+        {
+            isOnGround = true;
+        }
     }
 }
