@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
         //name                   data type
         playerAnim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
+        //audio can be .mp3, .ogg, .waw
         Physics.gravity *= gravityModifier;
     }
 

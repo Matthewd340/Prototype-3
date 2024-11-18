@@ -7,9 +7,11 @@ public class PlayerControllerX : MonoBehaviour
     public bool gameOver = false;
 
     public float floatForce;
-    private float gravityModifier = 1.5f;
+    public float gravityModifier = 1.5f;
     private Rigidbody playerRb;
     public float topBound = 16.5f;
+    public float bottomBound = 1.5f;
+    public Vector3 playerStartPos;
 
     public ParticleSystem explosionParticle;
     public ParticleSystem fireworksParticle;
@@ -17,6 +19,7 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
+    public AudioClip bounceSound;
 
 
     // Start is called before the first frame update
@@ -38,6 +41,17 @@ public class PlayerControllerX : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && !gameOver)
         {
             playerRb.AddForce(Vector3.up * floatForce);
+        }
+
+        if (transform.position.y > topBound)
+        {
+            transform.position = playerStartPos;
+            playerAudio.PlayOneShot(bounceSound, 1.0f);
+        }
+        else if (transform.position.y < bottomBound)
+        {
+            transform.position = playerStartPos;
+            playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
     }
 
