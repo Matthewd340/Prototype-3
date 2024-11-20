@@ -9,7 +9,7 @@ public class PlayerControllerX : MonoBehaviour
     public float floatForce;
     public float gravityModifier = 1.5f;
     private Rigidbody playerRb;
-    public float topBound = 16.5f;
+    public float topBound = 14.5f;
     public float bottomBound = 1.5f;
     public Vector3 playerStartPos;
 
@@ -45,12 +45,12 @@ public class PlayerControllerX : MonoBehaviour
 
         if (transform.position.y > topBound)
         {
-            transform.position = playerStartPos;
+            transform.position = new Vector3 (transform.position.x, topBound, transform.position.z);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
         else if (transform.position.y < bottomBound)
         {
-            transform.position = playerStartPos;
+            transform.position = new Vector3 (transform.position.x, bottomBound, transform.position.z);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
     }

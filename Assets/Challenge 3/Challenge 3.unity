@@ -854,7 +854,7 @@ MonoBehaviour:
   gameOver: 0
   floatForce: 15
   gravityModifier: 1.5
-  topBound: 16.5
+  topBound: 14.5
   bottomBound: 1.5
   playerStartPos: {x: -3, y: 12, z: 0}
   explosionParticle: {fileID: 1171260740}
