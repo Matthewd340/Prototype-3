@@ -481,22 +481,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Challenge 3/Scripts
+    - Assets/Challenge 3/Materials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Challenge 3/Scripts
+  - Assets/Challenge 3/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/game34/Desktop/Create with Code/Prototype 3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 90400000
-    m_LastClickedID: 16528
-    m_ExpandedIDs: 000000007c4000007e40000000ca9a3b
+    m_SelectedIDs: 5c460000
+    m_LastClickedID: 18012
+    m_ExpandedIDs: 000000007c4000008040000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -645,8 +645,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bcf6ffff
-      m_LastClickedID: 0
+      m_SelectedIDs: 7e3d0000
+      m_LastClickedID: 15742
       m_ExpandedIDs: 72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -707,9 +707,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8, y: 9, z: -20}
+    m_Target: {x: -3, y: 12, z: -0.000000059604645}
     speed: 2
-    m_Value: {x: 8, y: 9, z: -20}
+    m_Value: {x: -3, y: 12, z: -0.000000059604645}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -760,9 +760,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.079360574, y: 0.03737254, z: -0.0029773759, w: 0.9961408}
   m_Size:
-    m_Target: -0.010816466
+    m_Target: 1.9695582
     speed: 2
-    m_Value: -0.010816466
+    m_Value: 1.9695582
   m_Ortho:
     m_Target: 0
     speed: 2
