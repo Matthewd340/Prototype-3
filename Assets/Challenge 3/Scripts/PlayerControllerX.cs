@@ -45,12 +45,12 @@ public class PlayerControllerX : MonoBehaviour
 
         if (transform.position.y > topBound)
         {
-            transform.position = new Vector3 (transform.position.x, topBound, transform.position.z);
+            playerRb.AddForce(Vector3.down * 1, ForceMode.Impulse);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
         else if (transform.position.y < bottomBound)
         {
-            transform.position = new Vector3 (transform.position.x, bottomBound, transform.position.z);
+            playerRb.AddForce(Vector3.up * 1, ForceMode.Impulse);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
     }
