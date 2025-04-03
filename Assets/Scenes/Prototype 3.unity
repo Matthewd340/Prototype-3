@@ -245,7 +245,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d9e4a1dc327c41cea3c0d9fb97fa2e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 9099854548699605415, guid: 8657ea2271c3447bcb5726108c67ca74, type: 3}
+  obstaclePrefab:
+  - {fileID: 9099854548699605415, guid: 8657ea2271c3447bcb5726108c67ca74, type: 3}
+  - {fileID: 4601395168253647102, guid: 0306728e9862a4d85898bb72b2def585, type: 3}
+  - {fileID: 1034075713998608316, guid: 3603527849e8048ac89ee5c0de2a83e9, type: 3}
+  - {fileID: 8232881181436891236, guid: 103b9f2d1a11c44c5a8292b4e6fcffd6, type: 3}
+  - {fileID: 5890744864419277643, guid: 98b65f96e592740f4b0a86632a2f881d, type: 3}
+  - {fileID: 2862937565236170889, guid: 2834d031be4884d1ca31f358fca16f76, type: 3}
   startDelay: 2
   repeatRate: 1.5
 --- !u!4 &341977795
@@ -539,6 +545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b64f372bd0c64c22917abe1196063ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingSpeed: 30
+  boostSpeed: 60
   speed: 30
   leftBound: -15
 --- !u!114 &835818923

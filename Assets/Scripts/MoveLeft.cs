@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    public float speed = 30;
+    public float startingSpeed = 30;
+    public float boostSpeed = 60;
+    public float speed;
     private PlayerController playerControllerScript;
     public float leftBound = -15;
     // Start is called before the first frame update
@@ -20,6 +22,16 @@ public class MoveLeft : MonoBehaviour
         if (playerControllerScript.gameOver == false)
         {
         transform.Translate(Vector3.left * Time.deltaTime * speed);
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 60;
+        }
+
+        else if (!Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 30;
         }
 
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
